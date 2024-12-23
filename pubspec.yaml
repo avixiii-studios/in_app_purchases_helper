@@ -1,0 +1,28 @@
+name: in_app_purchases_helper
+description: A Flutter package to easily integrate in-app purchases for both Android and iOS platforms
+version: 0.0.1
+homepage: https://github.com/avixiii-studios/in_app_purchases_helper
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  in_app_purchase: ^3.1.11
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.avixiii.in_app_purchases_helper
+        pluginClass: InAppPurchasesHelperPlugin
+      ios:
+        pluginClass: InAppPurchasesHelperPlugin
